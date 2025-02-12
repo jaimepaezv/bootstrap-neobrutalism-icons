@@ -1,0 +1,268 @@
+/* custom-buttons.css - Neobrutalist Buttons (White, Black, Orange) */
+
+:root {
+  --bs-white: #fff;
+  --bs-black: #000;
+  --bs-orange: #ffa500; /* Define your orange color */
+  --neobrutalist-border-width: 2px; /* Adjust for thicker borders */
+}
+
+/* Base button styles - for .btn class */
+.btn {
+    --bs-btn-color: var(--bs-black); /* Default text color: Black */
+    --bs-btn-bg: var(--bs-white);    /* Default background: White */
+    --bs-btn-border-color: var(--bs-black); /* Default border: Black */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow for depth */
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-color 0.15s ease-in-out; /* Include box-shadow in transition */
+}
+
+/* Primary button styles - for .btn-primary (Orange) */
+.btn-primary {
+    --bs-btn-color: var(--bs-white);   /* Primary text color: White */
+    --bs-btn-bg: var(--bs-orange);    /* Primary background: Orange */
+    --bs-btn-border-color: var(--bs-orange); /* Primary border: Orange */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+/* Secondary button styles - for .btn-secondary (Black) */
+.btn-secondary {
+    --bs-btn-color: var(--bs-white);   /* Secondary text color: White */
+    --bs-btn-bg: var(--bs-black);    /* Secondary background: Black */
+    --bs-btn-border-color: var(--bs-black); /* Secondary border: Black */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+/* Success button - Repurposed to White with Orange Border */
+.btn-success {
+    --bs-btn-color: var(--bs-black);     /* Success text color: Black */
+    --bs-btn-bg: var(--bs-white);      /* Success background: White */
+    --bs-btn-border-color: var(--bs-orange); /* Success border: Orange */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+/* Danger button - Repurposed to Orange with Black Border */
+.btn-danger {
+    --bs-btn-color: var(--bs-black);     /* Danger text color: Black */
+    --bs-btn-bg: var(--bs-orange);      /* Danger background: Orange */
+    --bs-btn-border-color: var(--bs-black); /* Danger border: Black */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+/* Warning button - Black with Orange Border */
+.btn-warning {
+    --bs-btn-color: var(--bs-white);     /* Warning text color: White */
+    --bs-btn-bg: var(--bs-black);      /* Warning background: Black */
+    --bs-btn-border-color: var(--bs-orange); /* Warning border: Orange */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+/* Info button - Orange with White Border */
+.btn-info {
+    --bs-btn-color: var(--bs-black);      /* Info text color: Black */
+    --bs-btn-bg: var(--bs-white);       /* Info background: White */
+    --bs-btn-border-color: var(--bs-orange);  /* Info border: Orange */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+/* Light button - Subtle neobrutalist white/black */
+.btn-light {
+    --bs-btn-color: var(--bs-black);
+    --bs-btn-bg: #f8f9fa; /* Keep light grey background or adjust to white */
+    --bs-btn-border-color: var(--bs-black); /*  Black border for contrast */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+/* Dark button - Neobrutalist black/white */
+.btn-dark {
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: #212529; /* Keep dark grey/black background or adjust to pure black */
+    --bs-btn-border-color: var(--bs-white); /* White border for contrast */
+    --bs-btn-border-width: var(--neobrutalist-border-width); /* Thicker border */
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+/* Link button - Orange Link (Neobrutalist style - no underline, maybe border on hover) */
+.btn-link {
+    --bs-btn-color: var(--bs-orange);    /* Link text color: Orange */
+    text-decoration: none; /* Remove underline */
+    border: var(--neobrutalist-border-width) solid transparent; /* Add border for hover effect */
+    border-radius: 0;
+    padding: calc(0.375rem - var(--neobrutalist-border-width)) calc(0.75rem - var(--neobrutalist-border-width)); /* Adjust padding to account for border */
+    box-shadow: none; /* Remove default box-shadow */
+}
+
+
+/* **Hover States - Neobrutalist Style - More Pronounced** */
+
+.btn:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-success:hover,
+.btn-danger:hover,
+.btn-warning:hover,
+.btn-info:hover,
+.btn-light:hover,
+.btn-dark:hover {
+    box-shadow: 4px 4px 0 var(--bs-black); /* More pronounced shadow on hover */
+    transform: translate(-2px, -2px); /* Move slightly up-left on hover for "pressed" effect */
+    transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color: 0.15s ease-in-out; /* Transition transform too */
+}
+
+.btn-link:hover {
+    border-color: var(--bs-orange); /* Orange border on link hover */
+    background-color: rgba(255, 165, 0, 0.1); /* Light orange background on hover */
+    box-shadow: none; /* No shadow on link hover */
+    transform: none; /* No transform on link hover */
+}
+
+
+/* **Active/Focus States - Neobrutalist Style** */
+
+.btn:focus,
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn-success:focus,
+.btn-danger:focus,
+.btn-warning:focus,
+.btn-info:focus,
+.btn-light:focus,
+.btn-dark:focus,
+.btn-link:focus,
+.btn:active,
+.btn-primary:active,
+.btn-secondary:active,
+.btn-success:active,
+.btn-danger:active,
+.btn-warning:active,
+.btn-info:active,
+.btn-light:active,
+.btn-dark:active {
+    box-shadow: inset 2px 2px 0 var(--bs-black); /* Inset shadow for pressed effect */
+    transform: translate(1px, 1px); /* Move slightly down-right when active/focused */
+}
+
+.btn-link:focus,
+.btn-link:active {
+    box-shadow: inset 2px 2px 0 var(--bs-black); /* Inset shadow for link active/focus */
+    transform: translate(1px, 1px); /* Move slightly down-right for link active/focus */
+    background-color: rgba(255, 165, 0, 0.2); /* Darker orange background on link active/focus */
+    border-color: var(--bs-orange);
+}
+
+
+/* **Outline Buttons - Neobrutalist Style** */
+
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-orange);
+    --bs-btn-border-color: var(--bs-orange);
+    --bs-btn-border-width: var(--neobrutalist-border-width);
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--bs-black);
+    --bs-btn-border-color: var(--bs-black);
+    --bs-btn-border-width: var(--neobrutalist-border-width);
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--bs-orange); /* Orange Outline */
+    --bs-btn-border-color: var(--bs-orange);
+    --bs-btn-border-width: var(--neobrutalist-border-width);
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+.btn-outline-danger {
+    --bs-btn-color: var(--bs-black); /* Black Outline */
+    --bs-btn-border-color: var(--bs-black);
+    --bs-btn-border-width: var(--neobrutalist-border-width);
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+.btn-outline-warning {
+    --bs-btn-color: var(--bs-orange); /* Orange Outline */
+    --bs-btn-border-color: var(--bs-orange);
+    --bs-btn-border-width: var(--neobrutalist-border-width);
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+.btn-outline-info {
+    --bs-btn-color: var(--bs-black); /* Black Outline */
+    --bs-btn-border-color: var(--bs-black);
+    --bs-btn-border-width: var(--neobrutalist-border-width);
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+.btn-outline-light {
+    --bs-btn-color: var(--bs-black); /* Black Outline */
+    --bs-btn-border-color: var(--bs-black);
+    --bs-btn-border-width: var(--neobrutalist-border-width);
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+.btn-outline-dark {
+    --bs-btn-color: var(--bs-white); /* White Outline */
+    --bs-btn-border-color: var(--bs-white);
+    --bs-btn-border-width: var(--neobrutalist-border-width);
+    --bs-btn-border-radius: 0; /* Sharp corners */
+    box-shadow: 2px 2px 0 var(--bs-black); /* Subtle offset shadow */
+}
+
+
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover,
+.btn-outline-success:hover,
+.btn-outline-danger:hover,
+.btn-outline-warning:hover,
+.btn-outline-info:hover,
+.btn-outline-light:hover,
+.btn-outline-dark:hover {
+    box-shadow: 4px 4px 0 var(--bs-black); /* More pronounced shadow on outline hover */
+    transform: translate(-2px, -2px); /* Move slightly up-left on outline hover */
+    transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out, background-color 0.15s ease-in-out, color 0.15s ease-in-out, border-color: 0.15s ease-in-out; /* Transition transform too */
+}
+
+.btn-outline-primary:focus,
+.btn-outline-secondary:focus,
+.btn-outline-success:focus,
+.btn-outline-danger:focus,
+.btn-outline-warning:focus,
+.btn-outline-info:focus,
+.btn-outline-light:focus,
+.btn-outline-dark:focus,
+.btn-outline-primary:active,
+.btn-outline-secondary:active,
+.btn-outline-success:active,
+.btn-outline-danger:active,
+.btn-outline-warning:active,
+.btn-outline-info:active,
+.btn-outline-light:active,
+.btn-outline-dark:active {
+    box-shadow: inset 2px 2px 0 var(--bs-black); /* Inset shadow for outline active/focus */
+    transform: translate(1px, 1px); /* Move slightly down-right for outline active/focus */
+}
