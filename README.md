@@ -138,3 +138,7 @@ Please also report any issues or suggestions through the issue tracker.
 ## License
 
 This project is licensed under the [MIT License](https://www.google.com/url?sa=E&q=LICENSE) - see the LICENSE file for details.
+
+## Screenshot (Demo)
+
+![image](https://github.com/user-attachments/assets/9df4f15c-e88c-4840-937b-9e593474ec99)
